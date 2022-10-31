@@ -52,7 +52,8 @@ for line in hate_speech:
     if "other" in line:
         counter = counter + 1
 
-print(counter)
-print(counterall)
-print(len(hate_speech))
-print(counter / len(hate_speech))
+print("All Posts: " + str(len(lines)))
+print("All Other: " + str(counterall))
+print("Other in Hate Speech: " + str(counter))
+print("Count Hate Speech: " + str(len(hate_speech)))
+print("Percentage: " + str(counter/len(hate_speech)))
